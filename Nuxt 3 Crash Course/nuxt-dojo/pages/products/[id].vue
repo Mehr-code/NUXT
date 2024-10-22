@@ -1,5 +1,12 @@
 <template>
-  <div><ProductDetail :product="product" /></div>
+  <div>
+    <Head>
+      <Title>Nuxt Dojo | {{ product.title }}</Title>
+      <Meta name="description" :content="product.description" />
+    </Head>
+
+    <ProductDetail :product="product" />
+  </div>
 </template>
 
 <script setup>
