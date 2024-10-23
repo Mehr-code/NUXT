@@ -11,10 +11,13 @@
       eligendi, iure fugit provident similique magnam doloribus fugiat
       reiciendis? Dolores, quia.
     </p>
+    <div>{{ data }}</div>
   </div>
 </template>
 
-<script setup></script>
+<script setup lang="js">
+  const { data } = await useFetch('/api/papa');
+</script>
 
 <style scoped>
 h2 {
