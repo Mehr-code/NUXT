@@ -16,7 +16,7 @@
 </template>
 
 <script setup lang="js">
-  const { data } = await useFetch('/api/papa');
+const { data } = await useFetch('/api/currency/GBP');
 </script>
 
 <style scoped>
