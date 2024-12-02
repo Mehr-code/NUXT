@@ -1,0 +1,1 @@
+export { default } from "file:///D:/%D9%81%D8%B1%D8%A7%D9%86%D8%AA%20%D8%A7%D9%86%D8%AF/NUXT/papaBnB/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"
