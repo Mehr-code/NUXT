@@ -1,30 +1,24 @@
 <template>
   <div>
     <div
-      v-for="home in homes"
-      :key="home.objectID"
+      v-for="hme in home"
+      :key="hme.objectID"
       style="float: left; margin: 10px"
     >
-      <img :src="home.images[0]" alt="" style="width: 200px" /><br />
-      {{ home.title }}<br />
-      {{ home.location.address }}{{ home.location.city }}{{ home.location.state
+      <img :src="hme.images[0]" alt="" style="width: 200px" /><br />
+      {{ hme.title }}<br />
+      {{ hme.location.address }}{{ hme.location.city }}{{ hme.location.state
       }}<br />
-      {{ home.guests }} guests<br />
-      {{ home.pricePerNight }} / night <br />
+      {{ hme.guests }} guests<br />
+      {{ hme.pricePerNight }} / night <br />
     </div>
   </div>
 </template>
 
-<script>
+<script setup>
 import homes from "~/data/homes";
 
-export default {
-  data() {
-    return {
-      homes: homes.slice(0, 3),
-    };
-  },
-};
+const home = homes.slice(0, 3);
 </script>
 
 <style scoped></style>
