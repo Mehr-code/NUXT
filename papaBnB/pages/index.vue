@@ -5,18 +5,14 @@
       :key="hme.objectID"
       style="float: left; margin: 10px"
     >
-      <img :src="hme.images[0]" alt="" style="width: 200px" /><br />
-      {{ hme.title }}<br />
-      {{ hme.location.address }}{{ hme.location.city }}{{ hme.location.state
-      }}<br />
-      {{ hme.guests }} guests<br />
-      {{ hme.pricePerNight }} / night <br />
+      <HomeCard :home="home" />
     </div>
   </div>
 </template>
 
 <script setup>
 import homes from "~/data/homes";
+import HomeCard from "~/components/HomeCard";
 
 const home = homes.slice(0, 3);
 </script>
