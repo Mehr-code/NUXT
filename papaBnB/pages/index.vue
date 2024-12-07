@@ -1,20 +1,30 @@
 <template>
   <div>
     <div
-      v-for="hme in home"
-      :key="hme.objectID"
+      v-for="home in homes"
+      :key="home.objectID"
       style="float: left; margin: 10px"
     >
-      <HomeCard :home="home" />
+      <HomeCard :homeData="home" />
     </div>
   </div>
 </template>
 
 <script setup>
-import homes from "~/data/homes";
-import HomeCard from "~/components/HomeCard";
+definePageMeta({
+  title: "Homepage",
+  meta: [
+    {
+      name: "description",
+      content: "This is a homepage!",
+    },
+  ],
+});
 
-const home = homes.slice(0, 3);
+import homesData from "~/data/homes";
+// import HomeCard from "~/components/HomeCard";
+
+const homes = homesData.slice(0, 3);
 </script>
 
 <style scoped></style>
