@@ -11,18 +11,18 @@
 </template>
 
 <script setup>
-definePageMeta({
+import homesData from "~/data/homes";
+// import HomeCard from "~/components/HomeCard";
+useHead({
   title: "Homepage",
   meta: [
     {
       name: "description",
       content: "This is a homepage!",
+      key: "description",
     },
   ],
 });
-
-import homesData from "~/data/homes";
-// import HomeCard from "~/components/HomeCard";
 
 const homes = homesData.slice(0, 3);
 </script>

@@ -180,7 +180,7 @@ const _lCJYlJ7PRj = (function(nitro) {
 
 const rootDir = "D:/فرانت اند/NUXT/papaBnB";
 
-const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"}],"link":[],"style":[],"script":[],"noscript":[]};
+const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"}],"link":[],"style":[],"script":[],"noscript":[],"titleTemplate":"papa BnB: %s","htmlAttrs":{"lang":"en"},"bodyAttrs":{"class":["my-class"]}};
 
 const appRootTag = "div";
 
